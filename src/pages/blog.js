@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import blogAPI from "../api/blog";
 import Loading from "../pages/loading";
 import BlogRender from "../components/blogrender";
+import han from "../styles/han.css";
 
 function BlogDetail() {
   let { id } = useParams();
@@ -27,12 +28,12 @@ function BlogDetail() {
   return (
     <>
       <div className="container">
-        <div className="blog-post">
+        <div className="">
           {!isLoading ? (
             <>
-              <h4 className="blog-post-title">{blogData.blogName}</h4>
-              <p className="blog-post-meta">{blogData.publishedTime}</p>
-              <BlogRender blogData={blogData} />
+              <h4 className="blog-title">{blogData.blogName}</h4>
+              <p className="blog-meta">{blogData.publishedTime}</p>
+              <BlogRender blogData={blogData} className={han} />
               <hr />
             </>
           ) : (

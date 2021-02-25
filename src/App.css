@@ -44,10 +44,14 @@
 }
 
 .footer > .container {
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .container > .navbar-brand {
-  padding-top: .55rem;
+  padding-top: 0.55rem;
+}
+
+.nav-link {
+  font-weight: 400;
 }

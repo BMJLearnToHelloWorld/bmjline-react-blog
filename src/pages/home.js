@@ -29,8 +29,8 @@ function PublishedBlogList(props) {
             {!isLoading ? (
               blogItems.map((blogItem) => (
                 <div className="blog-post" key={blogItem.id}>
-                  <h4 className="blog-post-title">{blogItem.blogName}</h4>
-                  <p className="blog-post-meta">{blogItem.publishedTime}</p>
+                  <h4 className="blog-title">{blogItem.blogName}</h4>
+                  <p className="blog-meta">{blogItem.publishedTime}</p>
                   <p>{blogItem.blogDescr}</p>
                   <Link to={`/blog/${blogItem.id}`}>Continue reading...</Link>
                   <hr />
