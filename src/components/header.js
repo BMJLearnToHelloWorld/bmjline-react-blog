@@ -15,7 +15,7 @@ function Header() {
               height="36"
               alt="logo"
             />{" "}
-            BMJLINE
+            <span style={{ paddingLeft: "0.2rem" }}>BMJLINE</span>
           </a>
           <button
             className="navbar-toggler"

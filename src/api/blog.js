@@ -1,8 +1,12 @@
 import { API } from "../utils/request";
 
 const blogAPI = {
-  getPublishedBlogs: async function () {
-    const res = await API.get("/query/published");
+  getPublishedBlogs: async function (pageNo) {
+    const res = await API.get("/query/published", {
+      params: {
+        pageNo: pageNo,
+      },
+    });
     return res.data;
   },
   getBlogData: async function (id) {
