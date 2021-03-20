@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <span style={{ fontSize: "14px" }}>
-          @Pasteright 2021{" "}
+          @Copyleft 2021{" "}
           <a
             href="https://github.com/BMJLearnToHelloWorld"
             target="_blank"

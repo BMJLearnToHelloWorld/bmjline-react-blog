@@ -1,0 +1,14 @@
+version: '3'           #该docker-compose.yml文件使用的版本是 3
+services:
+  #react-blog
+  react-blog:
+    build: ./              #指定Dockerfile文件
+    restart: always
+    image: bmjlinecloud/react-blog:v1              # 镜像名称:版本
+    container_name: bmjlinecloud_reactblog
+    environment:
+      TZ: Asia/Shanghai
+    volumes: #挂载数据卷，同步主机与容器的配置文件
+      - /data/bmjline/blog/build:/usr/share/nginx/html
+    ports:
+      - "80:80"                     #指定端口映射

@@ -28,7 +28,7 @@ function BlogDetail() {
   return (
     <>
       <div className="container">
-        <div className="blog-main">
+        <div className="blog-main blog">
           {!isLoading ? (
             <>
               <h4 className="blog-title">{blogData.blogName}</h4>
