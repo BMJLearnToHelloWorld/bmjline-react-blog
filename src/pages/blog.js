@@ -31,7 +31,7 @@ function BlogDetail() {
         <div className="blog-main blog">
           {!isLoading ? (
             <>
-              <h4 className="blog-title">{blogData.blogName}</h4>
+              <h1 className="blog-title">{blogData.blogName}</h1>
               <p className="blog-meta">{blogData.publishedTime}</p>
               <BlogRender blogData={blogData} className={han} />
               <hr />

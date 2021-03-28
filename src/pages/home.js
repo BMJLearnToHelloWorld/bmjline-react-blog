@@ -38,7 +38,7 @@ function PublishedBlogList(props) {
       {!isLoading ? (
         <main role="main" className="container">
           <div className="row">
-            <div className="col-md-12 blog-main">
+            <div className="col-md-12 blog-main blog">
               {blogItems.map((blogItem) => (
                 <div className="blog-post" key={blogItem.id}>
                   <h4 className="blog-title">{blogItem.blogName}</h4>

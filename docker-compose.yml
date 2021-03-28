@@ -10,5 +10,10 @@ services:
       TZ: Asia/Shanghai
     volumes: #挂载数据卷，同步主机与容器的配置文件
       - /data/bmjline/blog/build:/usr/share/nginx/html
+      - /data/bmjline/blog/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - /data/bmjline/blog/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - /data/bmjline/blog/crt/bmjline.com/Nginx:/etc/nginx/crt
+      - /data/bmjline/blog/log:/var/log/nginx
     ports:
-      - "80:80"                     #指定端口映射
+      - "443:443"                     #指定端口映射
+      - "80:80"
